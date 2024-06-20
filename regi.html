@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Poetsen+One&family=Tapestry&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            padding: 18px;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+        section {
+            background-color: #FEFEFE;
+            padding: 40px;
+            margin: 200px auto;
+            border-radius: 10px;
+            font-family: "Poetsen One", sans-serif;
+            color: whitesmoke;
+            height: 650px;
+            font-size: 20px;
+            font-family: "Playfair Display", serif;
+            width: 600px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 5%;
+            bottom: 10%;
+            left: 35%;
+        }
+        h2 {
+            color:#003063;
+            border-bottom: black 1px solid;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #000000;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="Rpassword"] {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+        }
+        button {
+            padding: 8px;
+            border: 1px solid #ccc;
+            width: 425px;
+            position: absolute;
+            top: 470px;
+            border-radius: 4px;
+            background-color:#002042;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #00C8FF;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background: linear-gradient(to right bottom, #1e3d59, #1d7c7e);
+           background-attachment: fixed;
+ 
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+        }
+        header {
+                text-align: center;
+                padding: 30px ;
+                background: linear-gradient(to right bottom, #1E3D59, #85D8FF);
+                color: #001F4D;
+                font-family: "Poetsen One", sans-serif;
+            }
+        #img{
+            float: left;
+            height: 150px;
+            width: 180px;
+            margin-left: 31px;
+            border-radius: 10px;
+            margin-top: 21px;
+            position: absolute;
+        }
+        .tagline {
+            font-size: 20px;
+            font-family: "Courgette", cursive;
+            color: #000000;
+        }
+        nav {
+             background-color: #212426b8;
+             padding: 10px 0;
+             opacity: 0.85;
+         }
+ 
+         nav ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             display: flex;
+             justify-content: center;
+         }
+ 
+         nav ul li {
+             margin: 0 15px;
+         }
+ 
+         nav ul li a {
+             padding: 10px 20px;
+             border-radius: 5px;
+             color: #fefefe;
+             text-decoration: none;
+             transition: background-color 0.3s ease;
+         }
+ 
+         nav ul li a:hover {
+             background-color: #1e3d59;
+         }
+         nav ul li:hover {
+            transform: scale(1.08);
+            box-shadow: 0px 10px 108px rgb(0, 255, 238);
+            transition: transform 0.4s, box-shadow 0.8s;
+        }
+        .star::after {
+            content: '*';
+            color: #FF0909;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        footer {
+            background-color: #212426b8;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            font-weight: bolder;
+        }
+        #ar {
+            width: 50px;
+            height: auto;
+            float: left;
+            position: absolute;
+            left: 580px;
+            top: 270px;
+            border-radius: 50%;
+            }
+        input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus{
+            border-color: #0056B3;
+            box-shadow: 0px 0px 20px #AF69ED;
+            outline: none;
+            transition: box-shadow 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <img src="./cis.jpg" id="img">
+    <header>
+        <h1>Cryptography</h1>
+        <h3 class="tagline">"If privacy is outlawed, only outlaws will have privacy."</h3>
+    </header>
+    <a href="h.html">
+        <img src="./a3.jpg" id="ar" >
+        </a>
+        <nav>
+            <ul>
+                <li><a href="h.html">Home</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li><a href="test.html">Applications</a></li>
+                <li><a href="cc.html">Courses</a></li>
+                <li><a href="contact.html"> Contact Us </a></li>
+            </ul>
+        </nav>
+    <section>
+        <h2 id="l1">Register</h2>
+        <form id="regi-form">
+            <label for="regi-username" class="star">Username:</label>
+            <input type="text" id="regi-username" name="username" required>
+            <label for="regi-password" class="star">Password:</label>
+            <input type="password" id="regi-password" name="password" required>
+            <label for="regi-password" class="star">Confirm Password:</label>
+            <input type="password" id="regi-password" name="Rpassword" required>
+            <label for="regi-email" class="star">Email:</label>
+            <input type="email" id="regi-email" name="email" required>
+            <a href="h.html">
+            <button type="submit">Register</button></a>
+    </section>
+    <footer>
+        <p>&COPY; 2024, by Harve Suvala</p>
+    </footer>
+</body>
+</html>

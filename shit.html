@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Poetsen+One&family=Tapestry&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background: linear-gradient(to right bottom, #1e3d59, #85d8ff);
+            background-attachment: fixed;
+            align-content: center;
+            background-image: url(cis.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #1e3d59;
+            color: white;
+            font-family: "Poetsen One", sans-serif;
+        }
+
+        .tagline {
+            font-size: 20px;
+            font-family: "Courgette", cursive;
+        }
+        #img {
+            float: left;
+            height: 150px;
+            width: 180px;
+            margin-left: 31px;
+            border-radius: 10px;
+            margin-top: 21px;
+            position: absolute;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        nav {
+            background-color: #4e8098;
+            padding: 10px 0;
+            opacity: 75%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fefefe;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #76b7c5;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .content-wrapper {
+            width: calc(100% - 460px); /* Adjusted for the aside width and spacing */
+        }
+
+        section {
+            background: radial-gradient(circle, #0056b3, #1e3d59);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: "Poetsen One", sans-serif;
+            color: whitesmoke;
+            flex: 1;
+            box-sizing: border-box;
+        }
+
+        #introduction:target {
+            transform: rotate(10deg);
+            background-color: #1e3d59;
+        }
+
+        aside {
+            width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            height: 318px;
+            position: relative;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        #l1 {
+            color: #01223e;
+        }
+
+        footer {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 50%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1e3d59;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #lock {
+            position: absolute;
+            top: 61%;
+            right: 260px;
+            height: 148px;
+            width: 185px;
+            border-radius: 10px;
+        }
+
+        #tag {
+            position: absolute;
+            top: 235px;
+            left: 887px;
+            font-size: 24px;
+            color: #53a4eb;
+            font-size: 20px;
+            animation: blink 2s infinite;
+        }
+
+        .star::after {
+            content: '*';
+            color: #ff0909;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        #tag1 {
+            position: absolute;
+            top: 255px;
+            left: 780px;
+            font-size: 24px;
+            color: #53a4eb;
+            font-size: 20px;
+            animation: blink 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <img src="./cis.jpg" id="img">
+    <header>
+        <h1>Cryptography</h1>
+        <h3 class="tagline">"If privacy is outlawed, only outlaws will have privacy."</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#courses">Courses</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content-wrapper">
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to the world of cryptography..</p>
+            </section>
+            <section id="applications">
+                <h2>Principles</h2>
+                <p>Discover the various principles of cryptography such as Data Confidentiality, Data Integrity, Authentication and Non-repudiation are core principles of modern-day cryptography.</p>
+            </section>
+            <section id="courses">
+                <h2>Courses</h2>
+                <p>Enroll in our courses to learn more about cryptography...</p>
+            </section>
+        </div>
+        <aside>
+            <h2 id="l1">Login</h2>
+            <form id="login-form">
+                <label for="login-username" class="star">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+                
+                <label for="login-password" class="star">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                
+                <button type="submit">Login</button>
+                <p>Don't have an Account? <a href="regi.html" id="S1">Signup Here</a> </p>
+            </form>
+        </aside>
+        <h2 id="tag">Enroll Now</h2>
+        <h2 id="tag1">To Unlock the World of Hacking!!!</h2>
+    </main>
+    <footer>
+        <p>&copy; 2024, by Harve Suvala</p>
+    </footer>
+</body>
+</html>

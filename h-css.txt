@@ -1,0 +1,255 @@
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background: linear-gradient(to right bottom, #1e3d59, #85d8ff);
+           background-attachment: fixed;
+           align-content: center;
+           background-image: url(cis.png);
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px ;
+            background-color: #1e3d59;
+            color: white;
+            font-family: "Poetsen One", sans-serif;      
+        
+        }
+
+    
+
+
+        .tagline {
+            font-size: 20px;
+            font-family: "Courgette", cursive;
+            
+        }
+        #img{
+            float: left;
+            height: 150px;
+            width: 180px;
+            margin-left: 31px;
+            border-radius: 10px;
+            margin-top: 21px;
+            position: absolute;
+            
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        nav {
+            background-color: #4e8098;
+            padding: 10px 0;
+            opacity: 85%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fefefe;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #1e3d59;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .content-wrapper {
+            width: calc(100% - 460px); /* Adjusted for the aside width and spacing */
+        }
+
+        section {
+            background: radial-gradient(circle, #0056b3, #1e3d59);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: "Poetsen One", sans-serif;
+            color: whitesmoke;
+            flex: 1;
+            box-sizing: border-box;
+            transition: transform 1.4s, box-shadow 0.8s;
+            transform-origin: left;
+        }
+        #courses{
+            position: absolute;
+            top: 650px;
+            width: 1330px;
+            height: 150px;
+        }
+        #applications {
+            position: absolute;
+            top: 473px;
+            width: 1330px;
+            height: 150px;
+            transition: #1e3d59 0.3s ease-in-out ;
+        }
+        #introduction {
+            position: absolute;
+            top: 300px;
+            width: 1330px;
+            height: 150px;
+        }
+        #introduction:target {
+            transform: rotate3d(45deg);
+            background-color: #1e3d59;
+        }
+       
+        aside { 
+            width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            height: 325px;
+            right: 45px;
+            position: absolute;
+            top: 300px;
+            
+        }
+
+        h2 {
+            color:white;
+        }
+
+        #l1 {
+            color: #01223e;
+        }
+
+        footer {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 50%;
+            font-weight: bolder;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1e3d59;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+       
+
+       
+        #lock {
+            position: absolute;
+            top: 61%;
+            right: 260px; 
+            height: 148px;
+            width: 185px;
+            border-radius: 10px;
+        }
+        #tag {
+            position: absolute;
+            top: 235px; 
+            left: 887px; 
+            font-size: 24px;
+            color: #53a4eb;
+            font-size: 20px;
+        }
+        .star::after {
+            content: '*';
+            color: #ff0909;
+            margin-left: 5px;
+            font-size: 12px;
+
+        }
+        #tag1 {
+            position: absolute;
+            top: 255px; 
+            left: 780px; 
+            font-size: 24px;
+            color:  #53a4eb;
+            font-size: 20px;
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;>
+            }
+        }
+
+        #tag {
+            animation: blink 2s infinite;
+        }
+        #tag1{
+            animation: blink 2s infinite;
+        }
+
+        section:hover {
+            transform: scaleX(1.03);
+            box-shadow: 0px 1px 20px rgb(255, 255, 255);
+            transition: transform 1.4s, box-shadow 0.8s;
+        }
+        nav ul li:hover {
+            transform: scale(1.08);
+            box-shadow: 0px 10px 108px rgb(0, 255, 238);
+            transition: transform 0.4s, box-shadow 0.8s;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #0056b3;
+            box-shadow: 0px 0px 25px rgba(0, 86, 179, 0.5);
+            outline: none;
+            transition: box-shadow 0.3s ease-out;
+        }

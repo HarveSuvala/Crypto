@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BioRhyme:wght@200..800&family=Courgette&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Tapestry&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background: linear-gradient(to right bottom, #1e3d59, #1d7c7e);
+            align-content: center;
+            background-attachment: fixed;
+         
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        section {
+            background: radial-gradient(circle,#3c3c3c , #111111);
+            padding: 40px;
+            margin-top: 1.5% ;
+            margin-left: 23%;
+            margin-right: 25%;
+            justify-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-family: "Poetsen One", sans-serif;
+            color: whitesmoke;
+            height: 650px;
+            font-size: 20px;
+            font-family: "Playfair Display", serif;
+            width: 1000px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 33px;
+            border-bottom: #000000 solid 1px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.2;
+            text-size-adjust: auto ;
+            size: 2px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            color: #1e3d59;
+            background-color: #85d8ff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "Playfair Display", serif;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background: #f5f5f5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+      
+        header {
+                text-align: center;
+                padding: 30px ;
+                background: linear-gradient(to right bottom, #1e3d59, #85d8ff);
+                
+                color: #001f4d;
+                font-family: "Poetsen One", sans-serif;      
+            
+            }
+
+        .tagline {
+            font-size: 20px;
+            font-family: "Courgette", cursive;
+            color: #000000;
+        }
+        #img {
+            float: left;
+            height: 150px;
+            width: 180px;
+            margin-left: 31px;
+            border-radius: 10px;
+            margin-top: 21px;
+            position: absolute;
+        }
+        nav {
+             background-color: #212426b8;
+             padding: 10px 0;
+             opacity: 0.85;
+         }
+ 
+         nav ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             display: flex;
+             justify-content: center;
+         }
+ 
+         nav ul li {
+             margin: 0 15px;
+         }
+ 
+         nav ul li a {
+             padding: 10px 20px;
+             border-radius: 5px;
+             color: #fefefe;
+             text-decoration: none;
+             transition: background-color 0.3s ease;
+         }
+ 
+         nav ul li a:hover {
+             background-color: #1e3d59;
+         }
+         nav ul li:hover {
+            transform: scale(1.08);
+            box-shadow: 0px 10px 108px rgb(0, 255, 238);
+            transition: transform 0.4s, box-shadow 0.8s;
+        }
+        footer {
+            background-color: #212426b8;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./cis.jpg" id="img">
+    <header>
+        <h1>Cryptography</h1>
+        <h3 class="tagline">"If privacy is outlawed, only outlaws will have privacy."</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="h.html">Home</a></li>
+            <li><a href="intro.html">Introduction</a></li>
+            <li><a href="test.html">Applications</a></li>
+            <li><a href="cc.html">Courses</a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Introduction</h2>
+        <p>Cryptography is the study and practice of techniques for secure communication in the presence of third parties called adversaries. It deals with developing and analyzing protocols that prevents malicious third parties from retrieving information being shared between two entities thereby following the various aspects of information security. Secure Communication refers to the scenario where the message or data shared between two parties can’t be accessed by an adversary. In Cryptography, an Adversary is a malicious entity, which aims to retrieve precious information or data thereby undermining the principles of information security. Data Confidentiality, Data Integrity, Authentication and Non-repudiation are core principles of modern-day cryptography.
+
+        Confidentiality refers to certain rules and guidelines usually executed under confidentiality agreements which ensure that the information is restricted to certain people or places.
+        Data integrity refers to maintaining and making sure that the data stays accurate and consistent over its entire life cycle.
+        Authentication is the process of making sure that the piece of data being claimed by the user belongs to it.
+        Non-repudiation refers to the ability to make sure that a person or a party associated with a contract or a communication cannot deny the authenticity of their signature over their document or the sending of a message.
+        </p>
+        <div class="btn-container">
+            <a href="h.html">
+                <button type="submit" class="btn">Back to Home</button>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>&COPY; 2024, by Harve Suvala</p>
+    </footer>
+</body>
+</html>
